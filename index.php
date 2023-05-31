@@ -15,16 +15,27 @@ Oggi pomeriggio ripassate i primi concetti di classe, variabili e metodi d'istan
 
         public $name;
         public $category;
-        public $lenght; //in minuti
+        public $lenght;
         public $director;
         public $mainActor;
+        public $year;
         // public $awards;
-       function __construct(){
 
+       function __construct($_name, $_category, $_lenght, $_director, $_mainActor, $_year){
+            $this->name = $_name;
+            $this->category = $_category;
+            $this->lenght = $_lenght;
+            $this->director = $_director;
+            $this->mainActor = $_mainActor;
+            $this->year = $_year;
        }
     }
 
-    $
+    $pulpfiction = new Movie('Pulpfiction', 'crime', '154 min', 'Quentin Tarantino', 'John Travolta', '1994' );
+    
+    $interstellar = new Movie( 'Interstellar', 'sci-fi', '169 min', 'Christopher Nolan', 'Matthew McConaughey', '2014' );
+
+    var_dump($pulpfiction, $interstellar);
 ?>
 
 
